@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4A90E2;
+}
+
+.status {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.players-list {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.actions {
+  margin-bottom: 30px;
+}
+
+.phase {
+  display: none;
+  margin-top: 20px;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: #4A90E2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #357ABD;
+}
+
+#start-game {
+  background-color: #28a745;
+}
+
+#start-game:hover {
+  background-color: #218838;
+}
+
+/* Watermark Style */
+body::before {
+  content: "enji";
+  font-size: 10rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.2;
+  transform: rotate(-45deg);
+}

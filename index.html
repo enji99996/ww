@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Werewolf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="game-title">Werewolf Game</h1>
+
+    <div id="game-status" class="status"></div>
+
+    <div id="players-list" class="players-list"></div>
+
+    <div id="actions" class="actions">
+      <button class="btn" id="night-phase-button">Start Night Phase</button>
+      <button class="btn" id="day-phase-button">Start Day Phase</button>
+    </div>
+
+    <div id="night-phase" class="phase" style="display: none;">
+      <h2>Night Phase</h2>
+      <p>Werewolf, choose a victim:</p>
+      <select id="werewolf-victim" class="select">
+        <!-- Player options will be inserted here -->
+      </select>
+      <button class="btn" id="night-action-button">Choose Victim</button>
+    </div>
+
+    <div id="day-phase" class="phase" style="display: none;">
+      <h2>Day Phase</h2>
+      <p>Everyone, choose a player to execute:</p>
+      <select id="day-victim" class="select">
+        <!-- Player options will be inserted here -->
+      </select>
+      <button class="btn" id="day-action-button">Vote to Execute</button>
+    </div>
+
+    <button class="btn" id="start-game">Start Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
